@@ -4,7 +4,7 @@ import * as actions from '../actions';
 
 import Dropzone from 'react-dropzone';
 import Papa from 'papaparse';
-//import ParseCSV from './parse_csv';
+
 
 class Upload extends Component {
   onDrop(file){
