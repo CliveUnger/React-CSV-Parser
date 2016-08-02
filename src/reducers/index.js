@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import csvReducer from './csv_reducer';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  data: csvReducer
 });
 
 export default rootReducer;
