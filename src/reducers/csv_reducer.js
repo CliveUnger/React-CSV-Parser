@@ -1,9 +1,10 @@
 import {CSV_PARSED} from '../actions/types'
 
-export default function(state=[{json:"123"}], action) {
+export default function(state="", action) {
   switch(action.type){
     case CSV_PARSED:
-      return { ...state, json:action.payload}
+      var str = JSON.stringify(action.payload, null, 4);
+      return { ...state, json:str}
   }
 
   return state;
